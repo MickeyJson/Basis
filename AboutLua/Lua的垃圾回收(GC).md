@@ -4,6 +4,8 @@
 看过很多lua的相关学习系列和其中特性详解，也买了本书学习，但是关于Lua的垃圾回收机制的详细介绍有之甚少。<br/>
 曾经翻阅到一篇介绍，个人觉得非常详细，也加了一些个人的见解，下面就来看看
 
+[lua gc源码](https://github.com/shangjianzhe/Basis/blob/master/AboutLua/lua%20sourceCode%205.3.4/lgc.c)
+
 # <font face="微软雅黑" size = 5>GC类型</font>
 研究 Lua GC 的第一个收获是 GC 方式的细致分类。
 * Lua GC属于root-tracing这个大类
