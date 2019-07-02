@@ -2,7 +2,7 @@
 
 # <font face="微软雅黑" size = 5>前序</font>
 看过很多lua的相关学习系列和其中特性详解，也买了本书学习，但是关于Lua的垃圾回收机制的详细介绍有之甚少。<br/>
-曾经翻阅到一篇介绍，个人觉得非常详细，下面就来看看
+曾经翻阅到一篇介绍，个人觉得非常详细，也加了一些个人的见解，下面就来看看
 
 # <font face="微软雅黑" size = 5>GC类型</font>
 研究 Lua GC 的第一个收获是 GC 方式的细致分类。
@@ -205,6 +205,3 @@ Lua 的术语，相当于 Java 的 byte-code。<br/>
         * value 有九种类型：nil, boolean, number, string, table, function, userdata, thread。<br/><font color="red">其中 string, table, function, userdata, 和 thead 是 collectable value。</font>
 * Mark-and-sweep GC 中的 trace 阶段是 mark and propagate mark。<br/>其它类型的 root-tracing GC 的 trace 操作不一定如此，比如 copy-and-sweep GC 的 trace 阶段执行的是拷贝对象。<br/><br/>「__gc mark」是指给一个 value 设置 meta-table 时，后者就包含 __gc meta-method。给一个 value 已有的 meta-table 添加 __gc 方法并不是「__gc mark」，所加的方法也不会被 Lua GC 调用。其它 meta-method 只要在相应的 meta-event 出现时存在，就会被调用,而 __gc 必须在设定 meta-table 时就存在才会被 GC 调用。<br/><br/>
 考虑到之前所说，只要 Lua Registry 中的 value 和 meta-table 被 trace 完毕，Lua GC 就会去 trace main-thread。这时只要 main-thread 的 upvalue 和 stack 上的 value 被置为 gray 状态，main-thread 就会完全变 black。唯一引用它们的地方 —— stack，已经 shrink 回不再包含它们的状态。
-
-
-# <font face="微软雅黑" size = 3>[摘抄至技术奇异点](https://techsingular.net/)</font>
