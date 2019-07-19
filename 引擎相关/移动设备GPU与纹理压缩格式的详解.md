@@ -42,7 +42,7 @@
     * 纹理格式是能被GPU所识别的像素格式，能被快速寻址并采样
 
 * OpenGL ES 2.0支持以上提到的R5G6B5，A4R4G4B4，A1R5G5B5，R8G8B8，A8R8G8B8等纹理格式<br/>
-![alt](https://images.cnitblog.com/blog/16411/201302/04151230-6caff70f05cb4028a26ac0aa7e4e019f.jpg)
+<![alt](https://images.cnitblog.com/blog/16411/201302/04151230-6caff70f05cb4028a26ac0aa7e4e019f.jpg)>
 
 * 既然主流的图像文件格式移动端设备大部分都可以支持，为什么还需要纹理压缩？
     1. JPEG不支持透明度 
