@@ -145,7 +145,7 @@
 
 3. 图片导入到Unity引擎中，之所以很慢，是因为在进行纹理压缩编码生成新的文件，这一步很耗时间,
     * <font color="red"> Android 平台下 如果原图带有a通道会自动转换成为Etc2压缩格式 </font>
-    * <font color="red"> 当Graphic Api框架修改时不会自动转为当前APi框架支持的压缩格式，而是以当前的压缩格式打进AB包，在加载时依赖于Fallback机制还原成原图格式 </font>
+    * <font color="red"> 当Graphic Api框架修改时不会自动转为当前APi框架支持的压缩格式，而是以当前的压缩格式打进AB包，在加载时依赖于ETC2 fallback对于不支持ETC 2(不支持GLES3)的Android设备，可以通过从32位、16位或32位中选择一半分辨率格式来覆盖默认的ETC 2纹理解压缩 </font>
 
 4. AssetBundle打包图片，不是打包原图，而是针对你对图片设置的纹理压缩格式而生成的新的文件打包，所以ab文件的大小也和原图本身占用磁盘大小无关
 
