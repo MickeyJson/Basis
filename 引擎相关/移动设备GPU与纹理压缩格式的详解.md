@@ -11,7 +11,7 @@
     * 代表作  ：HTC G10、G14，小米1、2等
 
         
-        ![alt](https:////images.cnitblog.com/blog/16411/201302/04151206-b91d198a45cf4d2d9e597ddd25a47f1f.jpg)
+        ![alt](https://images.cnitblog.com/blog/16411/201302/04151206-b91d198a45cf4d2d9e597ddd25a47f1f.jpg)
 * ARM的Mali系列
     * 代表型号：Mali-400、Mali-T604等
     * 代表作  ：三星Galaxy SII、Galaxy SIII、Galaxy Note1、Galaxy Note2(亚版)等
