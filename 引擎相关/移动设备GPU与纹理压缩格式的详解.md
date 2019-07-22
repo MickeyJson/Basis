@@ -5,20 +5,24 @@
     * 代表型号：PowerVR SGX 535、PowerVR SGX 540、PowerVR SGX 543MP、PowerVR SGX 554MP等
     * 代表作  ：Apple iPhone全系、iPad全系，三星I9000、P3100等
 
+        ![alt](https://images.cnitblog.com/blog/16411/201302/04151140-bc36de0a24534b8fb23a81678197bf55.jpg)
 * Qualcomm(高通)的Adreno系列
     * 代表型号：Adreno 200、Adreno 205、Adreno 220、Adreno 320等
     * 代表作  ：HTC G10、G14，小米1、2等
 
+        
+        ![alt](https:////images.cnitblog.com/blog/16411/201302/04151206-b91d198a45cf4d2d9e597ddd25a47f1f.jpg)
 * ARM的Mali系列
     * 代表型号：Mali-400、Mali-T604等
     * 代表作  ：三星Galaxy SII、Galaxy SIII、Galaxy Note1、Galaxy Note2(亚版)等
 
+        ![alt](https://images.cnitblog.com/blog/16411/201302/04151215-16c57b6387bd471baf0618563c1fb9e3.jpg)
 * nVIDIA(英伟达)的Tegra系列
     * 代表型号：nVIDIA Tegra2、nVIDIA Tegra3等
     * 代表作  ：Google Nexus 7，HTC One X等
 
-* <a href="http://blog.csdn.net/wanglang3081/article/details/8869589">什么是压缩纹理，如何使用?</a>
-
+        
+        ![alt](https://images.cnitblog.com/blog/16411/201302/04151221-a7c98eedde2d4f44beb5973310fa53ca.jpg)
 # 压缩纹理的必要性
 
 * 图像文件格式和纹理格式的区别
