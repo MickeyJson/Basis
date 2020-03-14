@@ -61,10 +61,12 @@
      *narray = n;
      lua_assert(*narray/2 <= na && na <= *narray);
      return na;
-  }
-  nums[]: 构建的一个数组，根据index的大小，添加计数对应的位置，保证 2^(i-1) < index < 2^i。
-  narray：数组的size
+    }
+    nums[]: 构建的一个数组，根据index的大小，添加计数对应的位置，保证 2^(i-1) < index < 2^i。
+    narray：数组的size
     ```
+
+  
   * 另外： 对于数组的定义
     ```
     local px = {[0]=1,[1]=2,[2]=2,[5]=3}  --hash
